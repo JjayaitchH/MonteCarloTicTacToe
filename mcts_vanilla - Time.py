@@ -101,7 +101,9 @@ def think(board, state):
     identity_of_bot = board.current_player(state)
     root_node = MCTSNode(parent=None, parent_action=None, action_list=board.legal_actions(state))
     sampled_game = None
-    for step in range(num_nodes):
+    start = time()
+    time_elapsed = time() - start
+    while time_elapsed <= 1:
         # Copy the game for sampling a playthrough
         sampled_game = state
 
@@ -121,6 +123,7 @@ def think(board, state):
         if player != identity_of_bot:
             won = True
         backpropagate(node, won)
+        time_elapsed = time() - start
 
     # Return an action, typically the most frequently used action (from the root) or the action with the best
     # estimated win rate.
