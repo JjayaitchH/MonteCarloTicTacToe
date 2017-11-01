@@ -6,4 +6,4 @@ The bot will choose the best move, moving to block its opponent or complete its 
 
 Specific GitHub Notes:
 My partner any I do not approve of anyone plagiarising this code.
-It is simply here so that I have a place to keep my work and in case someone wants to see how, in this case, behavior trees work. 
+It is simply here so that I have a place to keep my work and in case someone wants to see how, in this case, a MTCS works. 
